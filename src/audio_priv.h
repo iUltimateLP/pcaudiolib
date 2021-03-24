@@ -59,6 +59,7 @@ struct audio_object
 #if defined(_WIN32) || defined(_WIN64)
 
 #include <windows.h>
+#include <mmreg.h>
 
 #define container_of(ptr, type, member) ((type *)( (char *)ptr - offsetof(type,member) ))
 
